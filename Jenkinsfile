@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/ankushregmi01/Dental-Web-Ultimate.git' 
+                git branch: 'main', url: 'https://github.com/ankushregmi01/Dental-Web-Ultimate.git'
             }
         }
         stage('Build') {
